@@ -10,7 +10,9 @@ mongoose.connect(mongoDB);
 var Schema = mongoose.Schema;
 var postSchema = new Schema({
     title: String,
-    content: String
+    content: String,
+    level: String,
+    background:String
 })
 var PostModel = mongoose.model('post', postSchema);
 
@@ -27,24 +29,28 @@ app.use(function(req, res, next) {
     next();
     });
     
-app.post('/name', function(req, res){
+/*app.post('/name', function(req, res){
     res.send("Hello you sent " +
     req.body.firstname + " " +
     req.body.lastname);
-})
+})*/
 
-app.get('/', function (req, res) {
+/*app.get('/', function (req, res) {
    res.send('Hello from Express');
-})
+})*/
 
 app.post('/api/posts', function(req, res){
     console.log("post successful");
     console.log(req.body.title);
     console.log(req.body.content);
+    console.log(req.body.level);
+    console.log(req.body.background);
 
     PostModel.create({
         title: req.body.title,
-        content: req.body.content
+        content: req.body.content,
+        level: req.body.level,
+        background: req.body.background
     });
     res.send('Item added');
 

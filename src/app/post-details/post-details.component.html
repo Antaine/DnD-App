@@ -6,6 +6,8 @@
       {{ post.title }}
     </mat-expansion-panel-header>
     <p>{{ post.content }}</p>
+    <p>{{ post.level }}</p>
+    <p>{{ post.background }}</p>
     <mat-action-row>
       <button mat-button color="primary">EDIT</button>
       <button mat-button (click)="onDelete(post._id)" color="warn">DELETE</button>
