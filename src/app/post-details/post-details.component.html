@@ -10,7 +10,7 @@
     <p>{{ post.background }}</p>
     <p>{{ post.Cclass }}</p>
     <mat-action-row>
-      <button mat-button color="primary">EDIT</button>
+      <button mat-button color="primary"[routerLink]="['/edit']">EDIT</button>
       <button mat-button (click)="onDelete(post._id)" color="warn">DELETE</button>
     </mat-action-row>
   </mat-expansion-panel>

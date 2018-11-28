@@ -1,1 +1,5 @@
-@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+
+mat-toolbar {
+    background-color:rgb(219, 219, 219)
+  }

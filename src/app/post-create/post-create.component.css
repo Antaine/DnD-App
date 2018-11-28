@@ -13,3 +13,16 @@ textarea {
   transform: translate(-50%, -50%); 
   width:50%;
  }
+
+.mat-card {
+  background-color:rgb(255, 250, 250);
+}
+
+body{
+  background-color: rgb(255, 250, 250);
+}
+
+.mat-form-field
+{
+  background-color: rgb(255, 250, 250);
+}

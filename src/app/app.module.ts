@@ -15,6 +15,8 @@ import { MatInputModule,
   MatToolbarModule,
   MatExpansionModule} from '@angular/material';
 import { PostCreateComponent } from './post-create/post-create.component';
+import { RollComponent } from './roll/roll.component';
+import { EditComponent } from './edit/edit.component';
 
 const appRoutes: Routes = [
   {
@@ -24,6 +26,16 @@ const appRoutes: Routes = [
   {
     path: 'create',
     component: PostCreateComponent
+  },
+
+  {
+    path: 'roll',
+    component: RollComponent
+  },
+
+  {
+    path: 'edit',
+    component: EditComponent
   }
 ];
 
@@ -32,7 +44,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     PostDetailsComponent,
-    PostCreateComponent
+    PostCreateComponent,
+    RollComponent,
+    EditComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
