@@ -16,6 +16,8 @@ export class PostCreateComponent implements OnInit {
     this.service.addPost(form.value.title, form.value.content).subscribe();
     
     console.log(form.value);
+    console.log(form.value.title);
+    console.log(form.value.title);
     form.resetForm();
   }
 

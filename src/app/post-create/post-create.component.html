@@ -1,29 +1,65 @@
 <mat-card>
-  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
-    <mat-form-field>
-      <input
-        matInput
-        type="text"
-        name="title"
-        ngModel
-        required
-        minlength="3"
-        #title="ngModel">
-      <mat-error *ngIf="title.invalid">Please enter a post title.</mat-error>
-    </mat-form-field>
-    <mat-form-field>
-      <textarea
-        matInput
-        rows="4"
-        name="content"
-        ngModel
-        required
-        #content="ngModel"></textarea>
-      <mat-error *ngIf="content.invalid">Please enter a post title.</mat-error>
-    </mat-form-field>
-    <button
-      mat-raised-button
-      color="accent"
-      type="submit">Save Post</button>
-  </form>
-</mat-card>
+    <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+      <div id="Input1">
+      <mat-form-field>
+        <input
+          matInput
+          name="title"
+          type="text"
+       
+          placeholder="Character Name"
+          ngModel
+          required
+          minlength="3"
+          #title="ngModel">
+        <mat-error *ngIf="title.invalid">Character Name</mat-error>
+      </mat-form-field>
+    </div>
+      
+      <mat-form-field>
+        <input
+          matInput
+          name="content"
+          type = "number"
+          id = "ageNum"
+          placeholder="Age"
+          ngModel
+          required
+          #content="ngModel">
+        <mat-error *ngIf="content.invalid">Age is a Number</mat-error>
+  
+      </mat-form-field>
+      <br>
+
+      <mat-form-field>
+          <select>
+              <option value="aclt">Acolyte</option>
+              <option value="entr">Entertainer</option>
+              <option value="nble">Noble</option>
+              <option value="sldr">Soldier</option>
+            </select> 
+          </mat-form-field>
+            <br>
+
+      <mat-form-field>
+      <select>
+          <option value="barb">Barbarian</option>
+          <option value="bard">Bard</option>
+          <option value="cler">Cleric</option>
+          <option value="drud">Druid</option>
+        </select> 
+      </mat-form-field>
+        <br>
+      <button
+        mat-raised-button
+        color="accent"
+        type="submit">Save Character</button>
+    </form><!-- Important Form is Used for the post data parts-->
+
+
+  </mat-card>
+  
+  <script>
+    //JS
+      </script>
+  
