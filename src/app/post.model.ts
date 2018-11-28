@@ -3,4 +3,5 @@ export interface Post {
   content: string;
   level: string;
   background: string;
+  Cclass: string;
 }

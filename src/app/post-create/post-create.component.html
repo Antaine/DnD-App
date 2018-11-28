@@ -61,11 +61,16 @@
             <br>
 
       <mat-form-field>
-      <select>
-          <option value="barb">Barbarian</option>
-          <option value="bard">Bard</option>
-          <option value="cler">Cleric</option>
-          <option value="drud">Druid</option>
+      <select
+          name = "Cclass"
+           id = "cl"
+           ngModel
+           required
+           #content="ngModel">
+          <option value="Barbarian">Barbarian</option>
+          <option value="Bard">Bard</option>
+          <option value="Cleric">Cleric</option>
+          <option value="Druid">Druid</option>
         </select> 
       </mat-form-field>
 <br>
