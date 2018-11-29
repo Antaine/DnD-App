@@ -60,10 +60,31 @@ app.post('/api/posts', function(req, res){
 
 })
 
+app.put('/api/posts/:id', function(req, res){
+    console.log("Update Post" +req.params.id);
+    console.log(req.body.title);
+    console.log(req.body.content);
+
+    PostModel.findByIdAndUpdate(req.params.id, req.body, 
+        function(err, data){
+            res.send(data);
+        })
+})
+
 app.get('/api/posts', function(req, res){
     PostModel.find(function(err, data){
         res.json(data);
     });
+})
+
+app.get('/api/posts/:id', function(req, res){
+    console.log("Read post " +req.params.id);
+
+    //PostModel.find({_id : req.params.id}, 
+    PostModel.findById(req.params.id,
+        function (err, data) {
+            res.json(data);
+        });
 })
 
 app.delete('/api/posts/:id', function(req, res){

@@ -34,7 +34,7 @@ const appRoutes: Routes = [
   },
 
   {
-    path: 'edit',
+    path: 'edit/:id',
     component: EditComponent
   }
 ];
