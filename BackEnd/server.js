@@ -63,7 +63,7 @@ app.post('/api/posts', function(req, res){
 app.put('/api/posts/:id', function(req, res){
     console.log("Update Post" +req.params.id);
     console.log(req.body.title);
-    console.log(req.body.content);
+    console.log(req.body.level);
 
     PostModel.findByIdAndUpdate(req.params.id, req.body, 
         function(err, data){

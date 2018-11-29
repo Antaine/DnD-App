@@ -27,8 +27,8 @@ export class EditComponent implements OnInit {
       this.post = data;
       console.log(this.post);
       this.myTitle = this.post.title;
-      console.log("message" +this.myTitle);
-
+      console.log("messagev " +this.myTitle);
+console.log(this.post.level)
     });
    }
 
