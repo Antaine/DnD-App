@@ -1,96 +1,87 @@
-
-  <mat-card>
-      <form (submit)="onEditPost(postForm)" #postForm="ngForm">
-        
-        <mat-form-field>
-          <input
-            matInput
-            type="text"
-            name="title"
-            ngModel={{post.title}}
-            required
-            #title="ngModel"
-            >
-        </mat-form-field>
-        <mat-form-field>
-          <input
-            matInput
-            name="level"
-            ngModel={{post.level}}
-            required
-            #level="ngModel">
-      
+<mat-card>
+  <form (submit)="onEditPost(postForm)" #postForm="ngForm">
     
-      </mat-form-field>
-        <!-- <mat-form-field>
-          <input
-            matInput
-            name="content"
-            type = "number"
-            id = "ageNum"
-            placeholder="Age"
-            ngModel
-            required
-            #content="ngModel"
-            ngModel={{post.content}}>
-          <mat-error *ngIf="content.invalid">Age is a Number</mat-error>
-          
-    
-        </mat-form-field> -->
-        <br>
-  
-        <!-- <mat-form-field>
-            <select 
-            name = "background"
-             id = "bg"
-             ngModel
-             required
-             #content="ngModel"
-             ngModel={{post.background}}>
-                <option value="Acolyte">Acolyte</option>
-                <option value="Entertainer">Entertainer</option>
-                <option value="Noble">Noble</option>
-                <option value="Soldier">Soldier</option>
-              </select> 
-            </mat-form-field>
-              <br>
-  
-        <mat-form-field>
-        <select
-            name = "Cclass"
-             id = "cl"
-             ngModel
-             required
-             #content="ngModel"
-             ngModel={{post.cClass}}>
-            <option value="Barbarian">Barbarian</option>
-            <option value="Bard">Bard</option>
-            <option value="Cleric">Cleric</option>
-            <option value="Druid">Druid</option>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="title"
+        ngModel={{post.title}}
+        required
+        #title="ngModel"
+        >
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        name="level"
+        type="number"
+        ngModel={{post.level}}
+        required
+        #level="ngModel">
+  </mat-form-field>
+     <mat-form-field>
+      <input
+        matInput
+        name="content"
+        type = "number"
+        ngModel={{post.content}}
+        placeholder="Age"
+        #content="ngModel"
+        required>
+      <mat-error *ngIf="content.invalid">Age is a Number</mat-error>
+    </mat-form-field>
+    <br>
+    <!-- <mat-form-field>
+        <select 
+        name = "background"
+         id = "bg"
+         ngModel
+         required
+         #content="ngModel"
+         ngModel={{post.background}}>
+            <option value="Acolyte">Acolyte</option>
+            <option value="Entertainer">Entertainer</option>
+            <option value="Noble">Noble</option>
+            <option value="Soldier">Soldier</option>
           </select> 
-        </mat-form-field> -->
-  <br>
-        <!-- <mat-form-field>
-          <select>
-              <option value="L">Lawful</option>
-              <option value="N">Neutal</option>
-              <option value="C">Chaotic</option>
-            </select> 
-  
-            <select>
-              <option value="G">Good</option>
-              <option value="N">Neutal</option>
-              <option value="E">Evil</option>
-            </select> 
-          </mat-form-field> -->
+        </mat-form-field>
           <br>
-        <button
-          mat-raised-button
-          color="accent"
-          type="submit">Save Character</button>
-      </form><!-- Important Form is Used for the post data parts-->
-  
-  
-    </mat-card>
 
-    
+    <mat-form-field>
+    <select
+        name = "Cclass"
+         id = "cl"
+         ngModel
+         required
+         #content="ngModel"
+         ngModel={{post.cClass}}>
+        <option value="Barbarian">Barbarian</option>
+        <option value="Bard">Bard</option>
+        <option value="Cleric">Cleric</option>
+        <option value="Druid">Druid</option>
+      </select> 
+    </mat-form-field> -->
+<br>
+    <!-- <mat-form-field>
+      <select>
+          <option value="L">Lawful</option>
+          <option value="N">Neutal</option>
+          <option value="C">Chaotic</option>
+        </select> 
+
+        <select>
+          <option value="G">Good</option>
+          <option value="N">Neutal</option>
+          <option value="E">Evil</option>
+        </select> 
+      </mat-form-field> -->
+      <br>
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit">Save Character</button>
+  </form><!-- Important Form is Used for the post data parts-->
+
+
+</mat-card>
