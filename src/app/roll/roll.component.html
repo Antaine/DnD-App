@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <button mat-button color="primary" onclick=generateStats()>Roll Charact Stats</button>
-    <p>Strength: </p>
+
+    <button mat-button color="primary"(click) = "RollStats()">Roll Charact Stats</button>
+    {{roll.d6Results[0]}}
+    <p>Strength: {{ roll.d6Results[0] }}</p>
     <p>Dexterity:</p>
     <p>Constitution:</p>
     <p>Intelligence:</p>
     <p>Wisdom:</p>
     <p>Charisma:</p>
 
-  <script>
-
-  </script>
-</body>
-</html>

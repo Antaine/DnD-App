@@ -4,4 +4,5 @@ export interface Post {
   level: string;
   background: string;
   Cclass: string;
+  allignment: string;
 }

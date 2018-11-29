@@ -13,7 +13,8 @@ var postSchema = new Schema({
     content: String,
     level: String,
     background:String,
-    Cclass: String
+    Cclass: String,
+    allignement: String
 })
 var PostModel = mongoose.model('post', postSchema);
 
@@ -53,7 +54,8 @@ app.post('/api/posts', function(req, res){
         content: req.body.content,
         level: req.body.level,
         background: req.body.background,
-        Cclass: req.body.Cclass
+        Cclass: req.body.Cclass,
+        allignement: req.body.allignement
     });
     res.send('Item added');
 

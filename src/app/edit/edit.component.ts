@@ -35,7 +35,7 @@ console.log(this.post.level)
 
 
   onEditPost(form: NgForm) {
-    this.service.updatePost(this.post._id, form.value.title, form.value.content, form.value.level, form.value.background, form.value.Cclass).subscribe(() =>
+    this.service.updatePost(this.post._id, form.value.title, form.value.content, form.value.level, form.value.background, form.value.Cclass, form.value.allignment).subscribe(() =>
     {
       this.router.navigate(['/list']);
     });

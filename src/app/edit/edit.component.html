@@ -63,8 +63,12 @@
       </select> 
     </mat-form-field>
 <br>
-    <!-- <mat-form-field>
-      <select>
+    <mat-form-field>
+      <select
+      name = "allignment"
+      ngModel
+      required
+      #allignment="ngModel">
           <option value="L">Lawful</option>
           <option value="N">Neutal</option>
           <option value="C">Chaotic</option>
@@ -75,7 +79,7 @@
           <option value="N">Neutal</option>
           <option value="E">Evil</option>
         </select> 
-      </mat-form-field> -->
+      </mat-form-field> 
       <br>
     <button
       mat-raised-button

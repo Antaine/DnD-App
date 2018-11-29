@@ -7,7 +7,6 @@
           matInput
           name="title"
           type="text"
-       
           placeholder="Character Name"
           ngModel
           required
@@ -76,7 +75,11 @@
       </mat-form-field>
 <br>
       <mat-form-field>
-        <select>
+        <select
+        name = "allignment"
+        ngModel
+        required
+        #allignment="ngModel">
             <option value="L">Lawful</option>
             <option value="N">Neutal</option>
             <option value="C">Chaotic</option>
