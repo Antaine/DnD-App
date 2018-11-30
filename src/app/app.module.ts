@@ -37,6 +37,11 @@ const appRoutes: Routes = [
   {
     path: 'edit/:id',
     component: EditComponent
+  },
+
+  {
+    path: 'search',
+    component: SerachComponent
   }
 ];
 
