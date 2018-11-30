@@ -17,6 +17,7 @@ import { MatInputModule,
 import { PostCreateComponent } from './post-create/post-create.component';
 import { RollComponent } from './roll/roll.component';
 import { EditComponent } from './edit/edit.component';
+import { SerachComponent } from './serach/serach.component';
 
 const appRoutes: Routes = [
   {
@@ -46,7 +47,8 @@ const appRoutes: Routes = [
     PostDetailsComponent,
     PostCreateComponent,
     RollComponent,
-    EditComponent
+    EditComponent,
+    SerachComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
