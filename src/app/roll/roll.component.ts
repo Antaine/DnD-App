@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./roll.component.css']
 })
 export class RollComponent implements OnInit {
-
+ d6Results = Array<Number>(6);
   constructor() { }
 
   ngOnInit() {
@@ -16,7 +16,6 @@ export class RollComponent implements OnInit {
 
   RollStats():any
   {
-    var d6Results = [];
     var d6;
     var rolls= [4];
     var statTotal = 0;
@@ -32,8 +31,8 @@ export class RollComponent implements OnInit {
         rolls[j] = d6;
       //  console.log("Random Number: " + d6 + " Count" +i);
       }
-    d6Results[i] =  this.calculateBest3(rolls[0],rolls[1],rolls[2],rolls[3]);
-    console.log(d6Results[i]);
+    this.d6Results[i] =  this.calculateBest3(rolls[0],rolls[1],rolls[2],rolls[3]);
+    console.log(this.d6Results[i]);
      
     }
   }//End of roll

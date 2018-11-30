@@ -1,10 +1,29 @@
 
-    <button mat-button color="primary"(click) = "RollStats()">Roll Charact Stats</button>
-    {{roll.d6Results[0]}}
-    <p>Strength: {{ roll.d6Results[0] }}</p>
-    <p>Dexterity:</p>
-    <p>Constitution:</p>
-    <p>Intelligence:</p>
-    <p>Wisdom:</p>
-    <p>Charisma:</p>
+  <button  mat-button color="primary"(click) = "RollStats()"> <i class="material-icons">casino</i> Roll </button>
+  <br>
+    <ul>
+        <li>
+            <p>Strength: </p>
+        </li>
 
+        <li>
+            <p>Dexterity:</p>
+        </li>
+
+        <li>
+            <p>Constitution:</p>
+        </li>
+        <li> 
+            <p>Intelligence:</p>
+        </li>
+        <li>  
+             <p>Wisdom:</p></li>
+        <li> 
+            <p>Charisma:</p></li>
+    </ul>
+
+    <ul>
+            <li *ngFor="let roll of d6Results">
+              {{ roll }}
+            </li>
+            </ul>
