@@ -1,0 +1,46 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+mat-form-field,
+textarea {
+  width: 40%;
+}
+.Input1{
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+  width:50%;
+ }
+
+.mat-card {
+  background-color: #240090;
+}
+
+body{
+  background-color: #0c0032;
+}
+
+.mat-form-field
+{
+  background-color: #240090;
+  text-decoration-color: #66fcf1;
+  -moz-text-decoration-color: #66fcf1;
+  -moz-user-input: #282828;
+}
+
+input
+{
+  background-color: #cdc9d8;
+  text-decoration-color: #66fcf1;
+  height: 2.5em;
+  
+}
+
+select
+{
+  background-color: #cdc9d8;
+  text-decoration-color: #66fcf1;
+  
+}
