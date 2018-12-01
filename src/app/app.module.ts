@@ -19,6 +19,7 @@ import { RollComponent } from './roll/roll.component';
 import { EditComponent } from './edit/edit.component';
 import { SerachComponent } from './serach/serach.component';
 
+//Paths
 const appRoutes: Routes = [
   {
     path: 'list',

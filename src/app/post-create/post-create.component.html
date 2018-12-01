@@ -1,8 +1,7 @@
-<body>
 <mat-card>
     <form (submit)="onAddPost(postForm)" #postForm="ngForm">
       <div id="Input1">
-      <mat-form-field>
+       <mat-form-field>
         <input
           matInput
           name="title"
@@ -12,8 +11,11 @@
           required
           minlength="3"
           #title="ngModel">
-        <mat-error *ngIf="title.invalid">Character Name</mat-error>
+          <mat-error *ngIf="title.invalid">Character Name</mat-error>
       </mat-form-field>
+
+      <br>
+
       <mat-form-field>
         <input
           matInput
@@ -24,8 +26,7 @@
           ngModel
           required
           #content="ngModel">
-        <mat-error *ngIf="content.invalid">Level >=1 && Level <=20</mat-error>
-  
+          <mat-error *ngIf="content.invalid">Level >=1 && Level <=20</mat-error>
       </mat-form-field>
     </div>
       
@@ -40,58 +41,57 @@
           required
           #content="ngModel">
         <mat-error *ngIf="content.invalid">Age is a Number</mat-error>
-        
-  
       </mat-form-field>
       <br>
 
       <mat-form-field>
-          <select 
-          name = "background"
-           id = "bg"
-           ngModel
-           required
-           #content="ngModel">
-              <option value="Acolyte">Acolyte</option>
-              <option value="Entertainer">Entertainer</option>
-              <option value="Noble">Noble</option>
-              <option value="Soldier">Soldier</option>
-            </select> 
-          </mat-form-field>
-            <br>
+        <select 
+            name = "background"
+            id = "bg"
+            ngModel
+            required
+            #content="ngModel">
+
+            <option value="Acolyte">Acolyte</option>
+            <option value="Entertainer">Entertainer</option>
+            <option value="Noble">Noble</option>
+            <option value="Soldier">Soldier</option>
+          </select> 
+        </mat-form-field>
+<br>
 
       <mat-form-field>
-      <select
-          name = "Cclass"
-           id = "cl"
-           ngModel
-           required
-           #content="ngModel">
-          <option value="Barbarian">Barbarian</option>
-          <option value="Bard">Bard</option>
-          <option value="Cleric">Cleric</option>
-          <option value="Druid">Druid</option>
-        </select> 
+        <select
+            name = "Cclass"
+            id = "cl"
+            ngModel
+            required
+            #content="ngModel">
+            <option value="Barbarian">Barbarian</option>
+            <option value="Bard">Bard</option>
+            <option value="Cleric">Cleric</option>
+            <option value="Druid">Druid</option>
+          </select> 
       </mat-form-field>
 <br>
       <mat-form-field>
         <select
-        name = "allignment"
-        ngModel
-        required
-        #allignment="ngModel">
-            <option value="L">Lawful</option>
-            <option value="N">Neutal</option>
-            <option value="C">Chaotic</option>
-          </select> 
+          name = "allignment"
+          ngModel
+          required
+          #allignment="ngModel">
+          <option value="L">Lawful</option>
+          <option value="N">Neutal</option>
+          <option value="C">Chaotic</option>
+        </select> 
 
-          <select>
-            <option value="G">Good</option>
-            <option value="N">Neutal</option>
-            <option value="E">Evil</option>
-          </select> 
-        </mat-form-field>
-        <br>
+        <select>
+          <option value="G">Good</option>
+           <option value="N">Neutal</option>
+          <option value="E">Evil</option>
+        </select> 
+      </mat-form-field>
+<br>
       <button
         mat-raised-button
         color="accent"
@@ -100,7 +100,6 @@
 
 
   </mat-card>
-</body>
   <script>
     //JS
       </script>

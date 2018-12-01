@@ -1,4 +1,5 @@
 export interface Post {
+  //Database Variables Variables
   title: string;
   content: string;
   level: string;

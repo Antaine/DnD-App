@@ -16,27 +16,30 @@ export class RollComponent implements OnInit {
 
   RollStats():any
   {
+    //Variables
     var d6;
     var rolls= [4];
     var statTotal = 0;
     var i =0;
     var j =0;
-  var count = 0;
+    //var count = 0;
     for(i=0;i<6;i++)
     {
-      count++;
+      //count++;
+      //Simulates Rolling 6 Sided Die 4 Times
       for(j=0;j<4;j++)
       {
         d6 = Math.floor((Math.random() * 6)+1)
         rolls[j] = d6;
       //  console.log("Random Number: " + d6 + " Count" +i);
-      }
+      }//Inner For
     this.d6Results[i] =  this.calculateBest3(rolls[0],rolls[1],rolls[2],rolls[3]);
     console.log(this.d6Results[i]);
      
-    }
+    }//End of Outer for
   }//End of roll
 
+  //Calculates Best 3 out of 4 Rolls
   calculateBest3(rl1:Number,rl2:Number,rl3:Number,rl4:Number)
   {
     var i=0;
@@ -52,6 +55,7 @@ export class RollComponent implements OnInit {
    var copy = 0;
    // console.log("Passed Nums:"+ rollArray[0] + " "+ rollArray[1] + " " +rollArray[2] + " " + rollArray[3]);
    
+          //Compares temp to Other Rolls
           if(temp>save1)
           {
             copy = save1;
@@ -77,7 +81,8 @@ export class RollComponent implements OnInit {
       //console.log("Highest 3 Rolls:"+ save1 + " "+ save2 + " " +save3);
       statTotal = save1 + save2 + save3;
     //  console.log(statTotal);
+    //Returns statTotal (Total of best 3)
       return statTotal;
-  }
-}
+  }//End of Calculate
+}//End of Export Class
 
